@@ -6,7 +6,9 @@ export LSCOLORS=ExFxBxDxCxegedabagacad
 #  -----------------------------------------
 #  Aliases
 #  -----------------------------------------
+
 # more at https://natelandau.com/my-mac-osx-bash_profile/
+
 alias ls="ls -GFh"
 alias ll="ls -FGlhAp"
 
@@ -32,5 +34,6 @@ trash () { command mv "$@" ~/.Trash ; }     # trash:        Moves a file to the 
 ql () { qlmanage -p "$*" >& /dev/null; }    # ql:           Opens any file in MacOS Quicklook Preview
 alias DT='tee ~/Desktop/terminalOut.txt'    # DT:           Pipe content to file on MacOS Desktop
 
+source $HOME/DevEnvFiles/.localAlias.sh
 source $HOME/oh-my-git/prompt.sh
-test -f ~/.git-completion.bash && . $_
+source $HOME/DevEnvFiles/.git-completion.bash
