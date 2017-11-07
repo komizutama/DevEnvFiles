@@ -37,3 +37,4 @@ alias DT='tee ~/Desktop/terminalOut.txt'    # DT:           Pipe content to file
 source $HOME/DevEnvFiles/.localAlias.sh
 source $HOME/oh-my-git/prompt.sh
 source $HOME/DevEnvFiles/.git-completion.bash
+source $HOME/DevEnvFiles/.secretkeys.sh
