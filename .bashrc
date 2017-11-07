@@ -2,7 +2,7 @@ export PROMPT_COMMAND=date
 export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\ ⚓ "
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
-export GUARDIAN_SECRET_KEY="A not very secret dev only key"
+
 #  -----------------------------------------
 #  Aliases
 #  -----------------------------------------
@@ -34,7 +34,7 @@ trash () { command mv "$@" ~/.Trash ; }     # trash:        Moves a file to the 
 ql () { qlmanage -p "$*" >& /dev/null; }    # ql:           Opens any file in MacOS Quicklook Preview
 alias DT='tee ~/Desktop/terminalOut.txt'    # DT:           Pipe content to file on MacOS Desktop
 
+source $HOME/DevEnvFiles/.secretkeys.sh
 source $HOME/DevEnvFiles/.localAlias.sh
 source $HOME/oh-my-git/prompt.sh
 source $HOME/DevEnvFiles/.git-completion.bash
-source $HOME/DevEnvFiles/.secretkeys.sh
