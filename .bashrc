@@ -8,6 +8,11 @@ export GDAL_DATA=/usr/local/opt/gdal2/share/gdal/
 #  Aliases
 #  -----------------------------------------
 
+#yet2
+alias scrapysplash="docker run -p 5023:5023 -p 8050:8050 -p 8051:8051 scrapinghub/splash" # launch splash with scrapy
+
+alias yet2scrapes="source ~/.envs/yet29chan/bin/activate"    #venv for scrapy/selenium install 
+
 # more at https://natelandau.com/my-mac-osx-bash_profile/
 
 alias ls="ls -GFh"
